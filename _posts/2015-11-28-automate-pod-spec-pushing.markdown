@@ -16,14 +16,6 @@ But if the library you have is a multiplatform library, you may not be the one d
 
 First of all, the person responsible for the library have to publish the release branch, then you (or whoever will update the pod spec) will have to pull the release branch, update the pod with the new version. Then you lint, to check if everything is ok, but you do not want to push the pod yet, as anyone else using this pod, might update, and get the new version, which is not available yet because you are still on the release branch, and the tag does not exist yet. So you have to push the release branch, wait for the responsible person to finish the release, and once everything is in the master branch, with tag and all, you can push the pod. After you pull the repo again of course.
 
-{% highlight swift %}
-func test() {
-  var you = "none"
-  let this = true
-  println(you)
-}
-{% endhighlight %}
-
 Dealing with all this is somewhat cumbersome, so I propose a different solution:
 Let your CI do the job.
 
