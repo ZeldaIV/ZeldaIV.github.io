@@ -3,7 +3,7 @@ layout: post
 title: Hello Internet
 modified:
 categories: blog
-excerpt:
+excerpt: I am Trond Bordewich, primarily developing mac apps...
 tags: []
 image:
   feature:

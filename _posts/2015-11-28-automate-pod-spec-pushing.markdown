@@ -3,7 +3,7 @@ layout: post
 title: Automate Pod Spec Pushing
 modified:
 categories: blog
-excerpt:
+excerpt: If you have ever used private pods, you are probably familiar with the process of updating the version number, lint the pod, and then push it up to your private repo...
 tags: []
 image:
   feature:

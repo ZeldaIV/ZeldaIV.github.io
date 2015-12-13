@@ -3,7 +3,7 @@ layout: post
 title: A Talk About Functional Programming
 modified:
 categories: blog
-excerpt:
+excerpt: Earlier this year [Inge Solvoll][ingesol] and I decided we wanted to do a talk about functional programming at this years [Trondheim Developer conference][tdc-2015], and the benefits of choosing functional programming. We decided that it would be fun if we could perform live coding...
 tags: []
 image:
   feature:

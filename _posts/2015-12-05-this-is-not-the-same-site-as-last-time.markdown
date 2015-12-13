@@ -3,7 +3,7 @@ layout: post
 title: This Is Not the Same Site as Last Time.
 modified:
 categories: blog
-excerpt:
+excerpt: For those of you who have visited my page before...
 tags: []
 image:
   feature:
