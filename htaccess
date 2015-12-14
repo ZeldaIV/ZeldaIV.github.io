@@ -1,0 +1,8 @@
+---
+layout: none
+permalink: .htaccess
+---
+## SITE REFERRER BANNING
+RewriteCond %{HTTP_REFERER} copyrightclaims.org [NC,OR]
+RewriteCond %{HTTP_REFERER} copyrightclaims.org
+RewriteRule .* - [F]
