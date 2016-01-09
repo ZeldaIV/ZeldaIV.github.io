@@ -4,7 +4,7 @@ title: TDD in mixed Objc and Swift projects.
 modified:
 categories: blog
 excerpt: In pure Swift or Objc projects it is pretty much straight forward to do unit testing. You just have to make sure you add the class under test to your test target so that the code is accessible from the test class.
-tags: []
+tags: [TDD, Swift, Objective-C]
 image:
   feature:
 date: 2015-12-12T19:43:52+01:00
