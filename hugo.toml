@@ -46,3 +46,7 @@ enableRobotsTXT = true
 
 [markup.goldmark.renderer]
   unsafe = false
+
+# Lets posts link to each other by filename: [text](other-post.md)
+[markup.goldmark.renderHooks.link]
+  useEmbedded = "always"
