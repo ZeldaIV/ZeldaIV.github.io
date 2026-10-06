@@ -1,0 +1,23 @@
+{{ define "main" }}
+<article>
+  <header class="post-header">
+    <h1>{{ .Title }}</h1>
+    {{ if eq .Section "blog" }}{{ partial "post-meta.html" . }}{{ end }}
+  </header>
+
+  {{ if and (eq .Section "blog") (lt .Date (now.AddDate -5 0 0)) }}
+  <p class="archive-note">This post is from {{ .Date.Year }}. Tools and APIs have moved on since, so some details may be out of date.</p>
+  {{ end }}
+
+  <div class="content">
+    {{ .Content }}
+  </div>
+
+  {{ if eq .Section "blog" }}
+  <nav class="post-nav" aria-label="More posts">
+    {{ with .NextInSection }}<a class="prev" href="{{ .RelPermalink }}"><span>Newer</span>{{ .Title }}</a>{{ end }}
+    {{ with .PrevInSection }}<a class="next" href="{{ .RelPermalink }}"><span>Older</span>{{ .Title }}</a>{{ end }}
+  </nav>
+  {{ end }}
+</article>
+{{ end }}

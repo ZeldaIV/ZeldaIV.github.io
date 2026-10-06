@@ -1,0 +1,48 @@
+baseURL = "https://www.trondbordewich.com/"
+locale = "en-US"
+title = "Trond Bordewich"
+enableRobotsTXT = true
+
+[params]
+  description = "Sharing what I learn about programming, and occasionally other things."
+  author = "Trond Bordewich"
+  github = "ZeldaIV"
+  linkedin = "trond-bordewich-75310a2"
+  stackoverflow = "https://stackoverflow.com/users/3198157/the-dude"
+
+# Keep the URLs from the old Jekyll site (/:categories/:title/)
+[permalinks.page]
+  blog = "/blog/:contentbasename/"
+
+[taxonomies]
+  tag = "tags"
+
+[menus]
+  [[menus.main]]
+    name = "Blog"
+    pageRef = "/blog"
+    weight = 10
+  [[menus.main]]
+    name = "Tags"
+    pageRef = "/tags"
+    weight = 20
+  [[menus.main]]
+    name = "About"
+    pageRef = "/about"
+    weight = 30
+
+# The old site served its feed at /feed.xml
+[outputFormats.RSS]
+  baseName = "feed"
+
+[outputs]
+  home = ["html", "rss"]
+  section = ["html"]
+  taxonomy = ["html"]
+  term = ["html"]
+
+[markup.highlight]
+  noClasses = false
+
+[markup.goldmark.renderer]
+  unsafe = false

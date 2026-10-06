@@ -1,0 +1,12 @@
+{{ define "main" }}
+<section class="intro">
+  {{ with site.GetPage "/about" }}{{ with .Resources.Get "bio-photo.jpg" }}
+    {{ $img := .Fill "176x176 Center q85 webp" }}
+    <img src="{{ $img.RelPermalink }}" width="88" height="88" alt="Trond Bordewich">
+  {{ end }}{{ end }}
+  <p><strong>Hi, I'm Trond.</strong> {{ site.Params.description }}</p>
+</section>
+
+<h1 class="section-title">Latest posts</h1>
+{{ partial "post-list.html" (first 10 (where site.RegularPages "Section" "blog")) }}
+{{ end }}

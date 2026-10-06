@@ -1,0 +1,11 @@
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; {{ now.Year }} {{ site.Params.author }}</span>
+    <nav aria-label="Elsewhere">
+      {{ with site.Params.github }}<a href="https://github.com/{{ . }}">GitHub</a>{{ end }}
+      {{ with site.Params.linkedin }}<a href="https://www.linkedin.com/in/{{ . }}/">LinkedIn</a>{{ end }}
+      {{ with site.Params.stackoverflow }}<a href="{{ . }}">Stack Overflow</a>{{ end }}
+      {{ with site.Home.OutputFormats.Get "rss" }}<a href="{{ .RelPermalink }}">RSS</a>{{ end }}
+    </nav>
+  </div>
+</footer>
