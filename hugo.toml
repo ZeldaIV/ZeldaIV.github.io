@@ -9,6 +9,8 @@ enableRobotsTXT = true
   github = "ZeldaIV"
   linkedin = "trond-bordewich-75310a2"
   stackoverflow = "https://stackoverflow.com/users/3198157/the-dude"
+  # Cloudflare Web Analytics site token; the beacon is only rendered in production builds
+  cloudflareAnalyticsToken = "f417c8c26d304f63848c18863676c4b3"
 
 # Keep the URLs from the old Jekyll site (/:categories/:title/)
 [permalinks.page]
